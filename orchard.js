@@ -36,40 +36,36 @@ const galaPrice = .64
 const pinkPrice = .55
 
 
-
 // PROBLEM 1
 
 /*
-    Using for loop, calculate the total number
-    of acres picked for the entire week.
-
-    Save the number to a variable called 
-    `totalAcres`.
-
+    Using for loop, calculate the total number of acres picked for the entire week.
+    Save the number to a variable called `totalAcres`.
     Log `totalAcres` to the console.
 */
 
-// CODE HERE
-
-
+let totalAcres = 0
+totalAcres2 = fujiAcres.concat(galaAcres,pinkAcres)
+console.log(totalAcres2)
+for(i = 0; i < totalAcres2.length; i++){
+    totalAcres = totalAcres + totalAcres2[i]
+}
+console.log(totalAcres)
 
 
 
 // PROBLEM 2
 
 /*
-    Using `totalAcres`, calculate the average 
-    number of acres picked per day. 
+    Using `totalAcres`, calculate the average number of acres picked per day. 
 
-    Save the answer to a variable called 
-    `averageDailyAcres`. 
+    Save the answer to a variable called `averageDailyAcres`. 
 
     Log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
-
-
+let averageDailyAcres = totalAcres / fujiAcres.length
+console.log(averageDailyAcres)
 
 
 
@@ -78,16 +74,12 @@ const pinkPrice = .55
 /*
     We have provided 2 variables below. 
     
-    The `acresLeft` variable is the number 
-    of acres that still have apples left. 
+    The `acresLeft` variable is the number of acres that still have apples left. 
     
-    The `days` variable represents how 
-    many more days of work are left. It's 
-    initialized at 0 because we're going 
-    to be using it as a counter.
+    The `days` variable represents how many more days of work are left. It's 
+    initialized at 0 because we're going to be using it as a counter.
     
-    Write a while loop that will continue to run
-    while `acresLeft` is above 0. 
+    Write a while loop that will continue to run while `acresLeft` is above 0. 
     
     On each iteration of the loop:
     - add 1 to the `days` variable
@@ -95,10 +87,8 @@ const pinkPrice = .55
 
     Outside the loop, log `days` to the console.
 
-    Note: This is not the most efficient way to
-    calculate this number. But! It is a great
-    way to get a whole number without using 
-    any Math methods. 
+    Note: This is not the most efficient way to calculate this number. But! It is a great
+    way to get a whole number without using any Math methods. 
 
 */
 
