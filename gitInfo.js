@@ -75,4 +75,4 @@ let gitCommitCode = 'git commit -m "<commitMessage>"'
     It should be a string containing your best definition of what 'git push' does.
 */
 
-//CODE HERE
+let gitPushDefinition = "A terminal command which pushes changes to a local repository out to an online repo at github."
