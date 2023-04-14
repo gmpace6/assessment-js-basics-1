@@ -46,11 +46,14 @@ const pinkPrice = .55
 
 let totalAcres = 0
 totalAcres2 = fujiAcres.concat(galaAcres,pinkAcres)
-console.log(totalAcres2)
 for(i = 0; i < totalAcres2.length; i++){
     totalAcres = totalAcres + totalAcres2[i]
 }
+console.log("Answer 1 ------------------")
 console.log(totalAcres)
+
+// I started out by seriously overcomplicating Problem 1, and then I searched "how to combine arrays js" in www.w3schools.com. Once I saw how to concatenate them, it made the rest of the problem much easier.
+
 
 
 
@@ -65,7 +68,11 @@ console.log(totalAcres)
 */
 
 let averageDailyAcres = totalAcres / fujiAcres.length
+console.log("Answer 2 ------------------")
 console.log(averageDailyAcres)
+
+// Problem 2 was very easy, I didn't need to reference any of the handouts or my notes because I could remember how to do these parts off the top of my head.
+
 
 
 
@@ -90,7 +97,13 @@ let days = 0
 while(acresLeft > 0){
 days += 1, acresLeft -=averageDailyAcres
 }
+console.log("Answer 3 ------------------")
 console.log(days)
+
+// I had to pull the "+= 1" from an example in one of the handputs; it made Problem 3 much easier.
+
+
+
 
 
 // PROBLEM 4
@@ -121,9 +134,13 @@ for(i = 0; i < galaAcres.length; i++){
 for(i = 0; i < pinkAcres.length; i++){
     pinkTons.push(pinkAcres[i] * 6.5)
 }
+console.log("Answer 4 ------------------")
 console.log(fujiTons)
 console.log(galaTons)
 console.log(pinkTons)
+
+// I got really hung up on Problem 4 for a while, until I checked the MAKING DECISIONS 2 handout and remembered I needed to reference the array in front of the [i] and inside of the .push() function.
+
 
 
 
@@ -145,11 +162,9 @@ let totalPinkTons = 0
 for(i = 0; i < fujiTons.length; i++){
     totalFujiTons = totalFujiTons + fujiTons[i]
 }
-
 for(i = 0; i < galaTons.length; i++){
     totalGalaTons = totalGalaTons + galaTons[i]
 }
-
 for(i = 0; i < pinkTons.length; i++){
     totalPinkTons = totalPinkTons + pinkTons[i]
 }
@@ -158,9 +173,15 @@ let fujiPounds = totalFujiTons * 2000
 let galaPounds = totalGalaTons * 2000
 let pinkPounds = totalPinkTons * 2000
 
+console.log("Answer 5 ------------------")
 console.log(fujiPounds)
 console.log(galaPounds)
 console.log(pinkPounds)
+
+// Problem 5 was much easier, as it used the same functions as previous problems.
+
+
+
 
 
 
@@ -182,9 +203,12 @@ let fujiProfit = fujiPounds * fujiPrice
 let galaProfit = galaPounds * galaPrice
 let pinkProfit = pinkPounds * pinkPrice
 
+console.log("Answer 6 ------------------")
 console.log('$' + fujiProfit)
 console.log('$' + galaProfit)
 console.log('$' + pinkProfit)
+
+// For problem 6 I wondered if it was too simple to just do the math, but since there werem't any instructions to use arrays or loops, I figured this would be okay.
 
 
 
@@ -194,11 +218,14 @@ console.log('$' + pinkProfit)
 // PROBLEM 7
 
 /*
-    Add up all your profits and save the number to a variable called 
-    `totalProfit`.
+    Add up all your profits and save the number to a variable called `totalProfit`.
 
     Log `totalProfit` to the console.
 */
 
 let totalProfit = fujiProfit + galaProfit + pinkProfit
+console.log("Answer 7 ------------------")
 console.log('$' + totalProfit)
+
+// Same with problem 7, I just did the math since there were no instuctions to do it any other way.
+// I hope you like my console.log "Answer # -----------" formatting!
