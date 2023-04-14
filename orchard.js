@@ -126,9 +126,18 @@ let fujiTons = []
 let galaTons = []
 let pinkTons = []
 
-
-
-
+for(i = 0; i < fujiAcres.length; i++){
+    fujiTons.push([i])
+}
+for(i = 0; i < galaAcres.length; i++){
+    galaTons.push(i * 6.5)
+}
+for(i = 0; i < pinkAcres.length; i++){
+    pinkTons.push(i * 6.5)
+}
+console.log(fujiTons)
+console.log(galaTons)
+console.log(pinkTons)
 
 
 
@@ -136,16 +145,10 @@ let pinkTons = []
 // PROBLEM 5
 
 /*
-    Next, calculate the total number of 
-    pounds picked per variety.
-
-    You'll need to add up the tons per
-    each variety and convert the number 
-    into pounds -- store that number in
-    the variables given below. 
-
+    Next, calculate the total number of pounds picked per variety.
+    You'll need to add up the tons per each variety and convert the number 
+    into pounds -- store that number in the variables given below. 
     Log each of the values to the console.
-
     Hint: there are 2000 pounds in a ton.
 */
 
