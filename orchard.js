@@ -73,61 +73,60 @@ console.log(averageDailyAcres)
 
 /*
     We have provided 2 variables below. 
-    
-    The `acresLeft` variable is the number of acres that still have apples left. 
-    
-    The `days` variable represents how many more days of work are left. It's 
+        The `acresLeft` variable is the number of acres that still have apples left. 
+        The `days` variable represents how many more days of work are left. It's 
     initialized at 0 because we're going to be using it as a counter.
-    
-    Write a while loop that will continue to run while `acresLeft` is above 0. 
-    
-    On each iteration of the loop:
+        Write a while loop that will continue to run while `acresLeft` is above 0. 
+        On each iteration of the loop:
     - add 1 to the `days` variable
     - subtract your daily average from the number of acres left
-
     Outside the loop, log `days` to the console.
-
     Note: This is not the most efficient way to calculate this number. But! It is a great
     way to get a whole number without using any Math methods. 
-
 */
 
 let acresLeft = 174 
 let days = 0
-
-// CODE HERE
-
+while(acresLeft > 0){
+days += 1, acresLeft -=averageDailyAcres
+}
+console.log(days)
 
 
 // PROBLEM 4
 
 /*
-    Your next task is to create 3 arrays
-    that list the daily amount of apples 
+    Your next task is to create 3 arrays that list the daily amount of apples 
     picked, in tons, for each variety. 
-    
-    Each acre yields 6.5 tons of apples.
-
-    Use the variables below to store 
-    your new arrays. Make sure that you
-    don't modify the original arrays 
-    on lines 36 - 38.
-
+        Each acre yields 6.5 tons of apples.
+    Use the variables below to store your new arrays. Make sure that you
+    don't modify the original arrays on lines 36 - 38.
     Log each of your arrays to the console.
-
-    Hint: you can use the slice method 
-    to make copies of the arrays and 
-    then loop the copies. You could also
-    make empty arrays, loop the old ones
-    and use the push method to add new 
-    values to the new arrays.
+    Hint: you can use the slice method to make copies of the arrays and 
+    then loop the copies. You could also make empty arrays, loop the old ones
+    and use the push method to add new values to the new arrays.
 */
 
-// CODE HERE
+// let totalFujiAcres = 0
+// for(i = 0; i < fujiAcres.length; i++){
+//     totalFujiAcres = totalFujiAcres + fujiAcres[i]
+// }
+// let totalGalaAcres = 0
+// for(i = 0; i < galaAcres.length; i++){
+//     totalGalaAcres = totalGalaAcres + galaAcres[i]
+// }
+// let totalPinkAcres = 0
+// for(i = 0; i < pinkAcres.length; i++){
+//     totalPinkAcres = totalPinkAcres + pinkAcres[i]
+// }
+// console.log(totalFujiAcres, totalGalaAcres, totalPinkAcres)
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
+
+
 
 
 
