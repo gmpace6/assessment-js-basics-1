@@ -107,33 +107,19 @@ console.log(days)
     and use the push method to add new values to the new arrays.
 */
 
-// let totalFujiAcres = 0
-// for(i = 0; i < fujiAcres.length; i++){
-//     totalFujiAcres = totalFujiAcres + fujiAcres[i]
-// }
-// let totalGalaAcres = 0
-// for(i = 0; i < galaAcres.length; i++){
-//     totalGalaAcres = totalGalaAcres + galaAcres[i]
-// }
-// let totalPinkAcres = 0
-// for(i = 0; i < pinkAcres.length; i++){
-//     totalPinkAcres = totalPinkAcres + pinkAcres[i]
-// }
-// console.log(totalFujiAcres, totalGalaAcres, totalPinkAcres)
-
 
 let fujiTons = []
 let galaTons = []
 let pinkTons = []
 
 for(i = 0; i < fujiAcres.length; i++){
-    fujiTons.push([i])
+    fujiTons.push(fujiAcres[i] * 6.5)
 }
 for(i = 0; i < galaAcres.length; i++){
-    galaTons.push(i * 6.5)
+    galaTons.push(galaAcres[i] * 6.5)
 }
 for(i = 0; i < pinkAcres.length; i++){
-    pinkTons.push(i * 6.5)
+    pinkTons.push(pinkAcres[i] * 6.5)
 }
 console.log(fujiTons)
 console.log(galaTons)
@@ -152,38 +138,53 @@ console.log(pinkTons)
     Hint: there are 2000 pounds in a ton.
 */
 
-// CODE HERE 
+let totalFujiTons = 0
+let totalGalaTons = 0
+let totalPinkTons = 0
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+for(i = 0; i < fujiTons.length; i++){
+    totalFujiTons = totalFujiTons + fujiTons[i]
+}
 
+for(i = 0; i < galaTons.length; i++){
+    totalGalaTons = totalGalaTons + galaTons[i]
+}
 
+for(i = 0; i < pinkTons.length; i++){
+    totalPinkTons = totalPinkTons + pinkTons[i]
+}
 
+let fujiPounds = totalFujiTons * 2000
+let galaPounds = totalGalaTons * 2000
+let pinkPounds = totalPinkTons * 2000
+
+console.log(fujiPounds)
+console.log(galaPounds)
+console.log(pinkPounds)
 
 
 
 // PROBLEM 6
 
 /*
-    Now that you know the total pounds
-    per variety, use the prices given 
-    at the beginning of this file to 
-    figure out how much you'll make 
+    Now that you know the total pounds per variety, use the prices given 
+    at the beginning of this file to figure out how much you'll make 
     from selling each type of apple. 
 
-    The prices are per pound and are 
-    written in cents. 
+    The prices are per pound and are written in cents. 
 
-    Log each of the profits to the 
-    console. 
+    Log each of the profits to the console. 
 */
 
-// CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+
+let fujiProfit = fujiPounds * fujiPrice
+let galaProfit = galaPounds * galaPrice
+let pinkProfit = pinkPounds * pinkPrice
+
+console.log('$' + fujiProfit)
+console.log('$' + galaProfit)
+console.log('$' + pinkProfit)
 
 
 
@@ -193,11 +194,11 @@ console.log(pinkTons)
 // PROBLEM 7
 
 /*
-    Add up all your profits and save 
-    the number to a variable called 
+    Add up all your profits and save the number to a variable called 
     `totalProfit`.
 
     Log `totalProfit` to the console.
 */
 
-// CODE HERE
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+console.log('$' + totalProfit)
