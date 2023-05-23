@@ -1,24 +1,26 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a variable called 'myName' with a value that is your name as a string. */
 
-let myName = "Garrett Pace"
+const myName = "Garrett Michael Pace"
 
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
-let faveNum = 6
+const faveNum = 6
 
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
-let lovesCode = true
+const lovesCode = true
 
 //////////////////PROBLEM 4////////////////////
 /*
-  Write an if-statement that checks if the faveNum variable is equal to 13. If it is, console.log('lucky 13!'). If it's not, console.log('not lucky 13').
+  Write an if-statement that checks if the faveNum variable is 
+  equal to 13. If it is, console.log('lucky 13!'). 
+  If it's not, console.log('not lucky 13').
 */
 
-if(faveNum === 13){
+if(faveNum === 13) {
   console.log('lucky 13!')
 } else {
   console.log('not lucky 13')
@@ -29,6 +31,43 @@ if(faveNum === 13){
   Write a for loop that prints out your faveNum 5 times.
 */
 
-for(let i=0; i<5; i++){
+for(let i = 0; i < 5; i++) {
   console.log(faveNum)
 }
+
+
+
+// //////////////////PROBLEM 1////////////////////
+// /* Create a variable called 'myName' with a value that is your name as a string. */
+
+// let myName = "Garrett Pace"
+
+// //////////////////PROBLEM 2////////////////////
+// /* Create a variable called 'faveNum' with a value that is your favorite number. */
+
+// let faveNum = 6
+
+// //////////////////PROBLEM 3////////////////////
+// /* Create a variable called 'lovesCode' and assign it a boolean value. */
+
+// let lovesCode = true
+
+// //////////////////PROBLEM 4////////////////////
+// /*
+//   Write an if-statement that checks if the faveNum variable is equal to 13. If it is, console.log('lucky 13!'). If it's not, console.log('not lucky 13').
+// */
+
+// if(faveNum === 13){
+//   console.log('lucky 13!')
+// } else {
+//   console.log('not lucky 13')
+// }
+
+// //////////////////PROBLEM 5////////////////////
+// /*
+//   Write a for loop that prints out your faveNum 5 times.
+// */
+
+// for(let i=0; i<5; i++){
+//   console.log(faveNum)
+// }
